@@ -89,8 +89,6 @@ RUN mkdir /home/user/.cache && \
 
 COPY entrypoint.sh /workspace/entrypoint.sh
 
-COPY *.py /workspace/
-
-COPY shared /workspace/shared
+COPY . /workspace/
 
 ENTRYPOINT ["/workspace/entrypoint.sh"]
