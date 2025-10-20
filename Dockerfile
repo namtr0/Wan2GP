@@ -89,4 +89,6 @@ RUN mkdir /home/user/.cache && \
 
 COPY entrypoint.sh /workspace/entrypoint.sh
 
+COPY *.py /workspace/
+
 ENTRYPOINT ["/workspace/entrypoint.sh"]
