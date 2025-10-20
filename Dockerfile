@@ -91,4 +91,6 @@ COPY entrypoint.sh /workspace/entrypoint.sh
 
 COPY *.py /workspace/
 
+COPY shared /workspace/shared
+
 ENTRYPOINT ["/workspace/entrypoint.sh"]
